@@ -24,10 +24,11 @@ class FileForm {
   render() {
     let tempParent = document.createElement('div');
     tempParent.innerHTML = `<form id='fileForm'>
-    <input type='text' id='title' name='title' />
-    <input type='text' id='author' name='author' />
-    <input type='file' id='imageSrc' name='imageSrc' />
-    <button type="submit">ZAPISZ</button>
+    <i class='welcome'> Add new file</i>
+    <p><input type='text' id='title' name='title' placeholder='Title' /></p>
+    <p><input type='text' id='author' name='author' placeholder='Author' /></p>
+    <p><input type='file' id='imageSrc' name='imageSrc' class='button' /></p>
+    <button class='button' type="submit">SAVE</button>
     </form>`
     this.parentEl.appendChild(tempParent.firstChild);
   }

@@ -14,7 +14,7 @@ class ImageClass{
   render(){
     let tempParent = document.createElement('div');
     tempParent.innerHTML = `<li>
-    <img src="${this.url}" />
+    <img class='img' src="${this.url}" />
     <p>${this.title} </p>
     <p>${this.author} </p>
     <p>${this.formatDate} </p>

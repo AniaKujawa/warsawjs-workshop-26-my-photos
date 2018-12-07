@@ -18,7 +18,7 @@ class Carousel {
     }
 
     renderRadios() {
-      let tempEl = document.createElement('fieldset');
+      let tempEl = document.createElement('fieldset')
       tempEl.innerHTML = this.imagesSrcs.map(img => {
         return '<input type="radio" name="choice" />'
       }).join('');
@@ -32,6 +32,8 @@ class Carousel {
       this.renderRadios();
     }
   }
+
+  
 
 // w konstruktorze:
   // this.imagesEl = Array.from(
